@@ -1,4 +1,4 @@
-class ProfilesController < ApplicationController::Base
+class ProfilesController < ApplicationController
 
   # GET to /users/:users_id/profile/new
   def new
