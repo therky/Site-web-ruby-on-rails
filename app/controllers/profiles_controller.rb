@@ -13,7 +13,7 @@ class ProfilesController < ApplicationController
     @profile = @user.build_profile ( profile_params )
     if @profile.save
       flash[:success] = "Profile Updated!"
-      redirect_to root_path #rooth_path -> GET request to the homepage
+      redirect_to user_path( params[:user_id] )#rooth_path -> GET request to the homepage
     else
       render action: :new
     end
